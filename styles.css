@@ -1,0 +1,119 @@
+body {
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00ffe7;
+  text-shadow: 0 0 8px #00ffe7, 0 0 16px #00bcd4;
+  border-bottom: 2px solid #00ffe7;
+}
+
+header h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffe7;
+  border: 1px solid #00ffe7;
+}
+
+h2 {
+  color: #ff2ef2;
+  font-size: 24px;
+  border-bottom: 2px solid #ff2ef2;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 5px #ff2ef2;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #d0d0ff;
+}
+
+a {
+  color: #ffb300;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-shadow: 0 0 6px #ffb300;
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p,
+  li {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+
+.terminal {
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  color: #00ffe7;
+  text-shadow: 0 0 6px #00ffe7;
+}
+
+.prompt {
+  color: #ff2ef2;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #ff2ef2;
+  margin-left: 2px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

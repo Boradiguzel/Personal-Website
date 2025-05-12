@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bora Adıgüzel | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bora Adıgüzel</h1>
+
+      <div class="terminal">
+        <p>
+          <span class="prompt">></span> <span id="typewriter"></span
+          ><span class="cursor">|</span>
+        </p>
+      </div>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a computer engineering student passionate about building clean and
+        functional web experiences. While I enjoy working web technologies, i am
+        also interested in <strong>backend development</strong> and exploring
+        <strong>blockchain technologies</strong>. <br /><br />
+        I actively participate in developer communities such as the GTU
+        Blockchain Club, where I contribute to projects involving smart
+        contracts and Web3 tools.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Personal Portfolio:</strong> This site! Built using HTML &
+          CSS.
+        </li>
+        <li>
+          <strong>Blockchain Club Contribution:</strong> Smart contract basics
+          with Solidity and Web3.js.
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:adigzlbora@gmail.com">adigzlbora@gmail.com</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://linkedin.com/in/boradiguzel" target="_blank"
+          >linkedin.com/in/boradiguzel</a
+        >
+      </p>
+    </section>
+    <script>
+      const text = "Hello, I'm Bora Adıgüzel. Web & Blockchain Enthusiast.";
+      const speed = 50;
+      let i = 0;
+
+      function typeWriter() {
+        if (i < text.length) {
+          document.getElementById("typewriter").innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+
+      window.onload = typeWriter;
+    </script>
+  </body>
+</html>
